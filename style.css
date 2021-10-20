@@ -5,6 +5,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a,
 a:hover {
   text-decoration: none;
@@ -57,12 +61,12 @@ ul {
 }
 
 .header .navbar ul li a:hover {
-  color: #fc5497;
+  color: #104600;
 }
 
 .contacts {
   padding: 9px 25px;
-  background-color: #c32865;
+  background-color: #104600;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -70,7 +74,7 @@ ul {
 }
 
 .header .navbar .menu .contacts ul li a:hover {
-  color: #dfdfdf;
+  color: #fff;
 }
 
 .header .navbar .menu .contacts a {
@@ -87,7 +91,6 @@ ul {
 }
 
 .header .banner .app-text h1 {
-  color: white;
   font-size: 80px;
   margin-top: 135px;
   left: 15%;
@@ -96,8 +99,12 @@ ul {
   position: absolute;
 }
 
-.header .banner .app-text h1 span {
-  color: #c32865;
+.header .banner .app-text h1 .pink {
+  color: #104600;
+}
+
+.header .banner .app-text h1 .white {
+  color: #fff;
 }
 
 .header .banner .app-text .btn-group {
@@ -122,6 +129,10 @@ ul {
   left: 20%;
 }
 
+.header .banner .app-text .btn-group .play-btn-inner span a {
+  color: #fff;
+}
+
 .header .banner .app-text .btn-group .play-btn-inner i {
   font-size: 15px;
   display: inline-flex;
@@ -141,9 +152,9 @@ ul {
 }
 
 .header .banner .app-text .btn-group .play-btn:hover .play-btn-inner i,
-.header .banner .app-text .btn-group .play-btn:hover span {
-  color: #c32865;
-  border-color: #c32865;
+.header .banner .app-text .btn-group .play-btn:hover span a {
+  color: #104600;
+  border-color: #104600;
   transition: all 0.5s;
 }
 
@@ -182,8 +193,8 @@ ul {
 }
 
 .header .social-icons ul li a:hover {
-  background: #c32865;
-  color: #fff;
+  background: #fff;
+  color: #104600;
 }
 
 .header .copy-right {
@@ -192,4 +203,17 @@ ul {
   bottom: 4%;
   color: #fff;
   font-size: 13px;
+}
+
+.header h2 {
+  font-size: 175px;
+  margin-top: 900px;
+  margin-left: 635px;
+}
+
+.header .abouttext ul {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 10%;
 }
