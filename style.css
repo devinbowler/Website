@@ -10,13 +10,35 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-.background {
-  width: 100%;
+body,
+html {
   height: 100%;
-  background: url(images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
-  background-size: cover;
+}
+
+.background {
+  /* The image used */
+  background-image: url("images/blake-connally-B3l0g6HLxr8-unsplash.jpg");
+
+  /* Add the blur effect */
   filter: blur(8px);
   -webkit-filter: blur(8px);
+  transform: scale(1.1);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+
+.logo h1 {
+  color: white;
+  font-size: 30pt;
+  text-align: left;
 }
 
 a,
@@ -28,45 +50,62 @@ ul {
   list-style: none;
 }
 
-.menu {
+.navbar {
   display: flex;
   align-items: center;
   padding-top: 20px;
 }
 
-.logo {
-  margin-left: 50px;
-  margin-top: 10px;
-  display: inline-block;
-}
-.logo a {
-  color: #fff;
-  font-size: 30px;
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
 }
 
-.menu ul {
-  top: 5%;
+.navbar ul {
+  top: 10%;
   left: 25%;
   word-spacing: 40px;
   position: absolute;
+  align-items: center;
 }
 
-.menu ul li {
+.navbar ul li {
   margin-right: 150px;
   align-items: center;
   display: inline-block;
 }
 
-.menu ul li a {
+.navbar ul li a {
   color: #fff;
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 2px;
   transition: all 0.3s;
+  overflow: hidden;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
 }
 
-.menu ul li a:hover {
+.navbar ul li a:hover {
   color: #104600;
+}
+
+.sticky {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  padding: 16px;
 }
 
 .contacts {
@@ -93,8 +132,12 @@ ul {
 
 .app-text {
   position: absolute;
-  top: 32%;
+  top: 30%;
   left: 15%;
+}
+
+.app-text h1 {
+  font-size: 30pt;
 }
 
 .app-text h1 .pink {
@@ -210,8 +253,7 @@ ul {
 
 h2 {
   font-size: 175px;
-  margin-top: 900px;
-  margin-left: 635px;
+  text-align: center;
 }
 
 .abouttext ul {
