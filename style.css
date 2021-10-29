@@ -15,25 +15,21 @@ html {
   height: 100%;
 }
 
-.background {
-  /* The image used */
-  background-image: url("images/blake-connally-B3l0g6HLxr8-unsplash.jpg");
+body {
+  overflow-x: hidden;
+}
 
-  /* Add the blur effect */
+.background {
+  background-image: url("images/blake-connally-B3l0g6HLxr8-unsplash.jpg");
   filter: blur(8px);
   -webkit-filter: blur(8px);
   transform: scale(1.1);
-
-  /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -10;
 }
-
-/* Position text in the middle of the page/image */
 
 .logo h1 {
   color: white;
@@ -51,29 +47,19 @@ ul {
 }
 
 .navbar {
-  display: flex;
+  display: inline-block;
   align-items: center;
   padding-top: 20px;
-}
-
-header {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 10%;
+  width: fit-content;
 }
 
 .navbar ul {
   top: 10%;
-  left: 25%;
-  word-spacing: 40px;
   position: absolute;
   align-items: center;
 }
 
 .navbar ul li {
-  margin-right: 150px;
   align-items: center;
   display: inline-block;
 }
@@ -88,9 +74,9 @@ header {
   float: left;
   display: block;
   color: #f2f2f2;
-  text-align: center;
   padding: 14px;
   text-decoration: none;
+  text-align: center;
 }
 
 .navbar ul li a:hover {
@@ -99,9 +85,18 @@ header {
 
 .sticky {
   z-index: 10;
-  position: fixed;
   top: 0;
+  position: absolute;
+  background-color: black;
+  display: block;
   width: 100%;
+  padding: 20px 10%;
+}
+
+.sticky .navbar ul {
+  padding-inline: 9%;
+  word-spacing: 250px;
+  display: block;
 }
 
 .content {
@@ -177,7 +172,7 @@ header {
 .play-btn-inner i {
   font-size: 15px;
   display: inline-flex;
-  width: 80px;
+  width: 80px; 
   height: 80px;
   padding-left: 4px;
   text-align: center;
@@ -207,11 +202,11 @@ header {
 .btn-group .primary-btn:before {
   content: "";
   position: absolute;
-  width: 200px;
+  width: 12%;
   height: 1px;
   border-top: 1px solid #fff;
   top: 46%;
-  left: 0;
+  left: 0%;
 }
 
 .social-icons {
