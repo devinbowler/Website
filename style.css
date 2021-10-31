@@ -85,12 +85,13 @@ ul {
 
 .sticky {
   z-index: 10;
-  top: 0;
-  position: absolute;
+  top: 0%;
+  position: fixed;
   background-color: black;
-  display: block;
+  display: flex;
   width: 100%;
   padding: 20px 10%;
+  box-sizing: border-box;
 }
 
 .sticky .navbar ul {
@@ -123,6 +124,10 @@ ul {
   letter-spacing: 1px;
   transition: all 0.3s;
   align-items: center;
+}
+
+#newabout {
+  scroll-margin-top: 50px;
 }
 
 .app-text {
@@ -172,7 +177,7 @@ ul {
 .play-btn-inner i {
   font-size: 15px;
   display: inline-flex;
-  width: 80px; 
+  width: 80px;
   height: 80px;
   padding-left: 4px;
   text-align: center;
@@ -254,6 +259,14 @@ h2 {
 .abouttext ul {
   font-size: 20px;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
+  line-height: 200%;
   margin-top: 10%;
+}
+
+h3 {
+  text-align: center;
+  font-size: 150px;
+  background-color: grey;
+  height: 940px;
 }
