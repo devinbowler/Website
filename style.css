@@ -5,6 +5,19 @@
   font-family: "Montserrat", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
@@ -16,14 +29,11 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  overflow: overlay;
 }
 
 .background {
-  background-image: url("images/blake-connally-B3l0g6HLxr8-unsplash.jpg");
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  transform: scale(1.1);
+  background-color: grey;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -214,43 +224,6 @@ ul {
   left: 0%;
 }
 
-.social-icons {
-  position: absolute;
-  right: 50px;
-  bottom: 2%;
-}
-
-.social-icons ul li {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-}
-
-.social-icons ul li a {
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 12px 17px;
-  font-size: 20px;
-  font-weight: 700;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-.social-icons ul li a:hover {
-  background: #fff;
-  color: #104600;
-}
-
-.copy-right {
-  position: absolute;
-  left: 50px;
-  bottom: 4%;
-  color: #fff;
-  font-size: 13px;
-}
-
 h2 {
   font-size: 175px;
   text-align: center;
@@ -264,13 +237,227 @@ h2 {
   margin-top: 10%;
 }
 
-h3 {
+#projects {
+  scroll-margin-top: 30px;
   text-align: center;
-  font-size: 150px;
+  font-size: 35px;
   background-color: grey;
-  height: 940px;
+  height: 1000px;
 }
 
-#portHead {
-  scroll-margin-top: 50px;
+#projects .project1 p {
+  width: 300px;
+  margin-left: 50px;
+  text-align: center;
+  margin-top: 170px;
+  font-size: 15px;
+}
+
+.project1 {
+  left: 20%;
+  margin-top: 5%;
+  position: absolute;
+  border-radius: 60px;
+  background: white;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.5);
+  height: 300px;
+  width: 400px;
+  transition: ease-out 0.5s;
+}
+
+.project1:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
+}
+
+#projects .project2 p {
+  width: 300px;
+  margin-left: 50px;
+  text-align: center;
+  margin-top: 190px;
+  font-size: 15px;
+}
+
+.project2 {
+  right: 20%;
+  margin-top: 5%;
+  position: absolute;
+  border-radius: 60px;
+  background: white;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.5);
+  height: 300px;
+  width: 400px;
+  transition: ease-out 0.5s;
+}
+
+.project2:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
+}
+
+.project3 {
+  left: 20%;
+  margin-top: 30%;
+  position: absolute;
+  border-radius: 60px;
+  background: white;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.5);
+  height: 300px;
+  width: 400px;
+  transition: ease-out 0.5s;
+}
+
+.project3:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
+}
+
+.project4 {
+  right: 20%;
+  margin-top: 30%;
+  position: absolute;
+  border-radius: 60px;
+  background: white;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.5);
+  height: 300px;
+  width: 400px;
+  transition: ease-out 0.5s;
+}
+
+.project4:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
+}
+
+#background1 {
+  background-color: #fff;
+  height: 400px;
+  background-size: cover;
+  background-repeat: none;
+}
+.footername {
+  position: absolute;
+  margin-top: -265px;
+  margin-left: 105px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.social-icons {
+  margin-left: 88px;
+  margin-top: -210px;
+}
+
+.social-icons ul li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.social-icons ul li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 12px 17px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.social-icons ul li a:hover {
+  background: grey;
+  color: black;
+}
+
+.copy-right {
+  position: absolute;
+  border-radius: 50px;
+  color: black;
+  font-size: 13px;
+  margin-left: 94px;
+  margin-top: -150px;
+}
+
+.address p {
+  color: black;
+  text-align: center;
+  position: absolute;
+  margin-left: 1236px;
+  margin-top: -225px;
+  font-size: 20px;
+  transition: ease-in-out 0.3s;
+}
+
+.address p:hover {
+  color: #104600;
+  transform: scale(0.9);
+}
+
+.addresshead {
+  position: absolute;
+  font-weight: lighter;
+  font-size: 27px;
+  margin-left: 1250px;
+  margin-top: -275px;
+}
+
+.phonehead {
+  position: absolute;
+  font-weight: lighter;
+  font-size: 27px;
+  margin-left: 1550px;
+  margin-top: -325px;
+}
+
+.phone a {
+  text-decoration: none !important;
+  color: black;
+  text-align: center;
+  position: absolute;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-left: 1530px;
+  margin-top: -275px;
+  transition: ease-in-out 0.3s;
+}
+
+.phone a:hover {
+  color: #104600;
+  transform: scale(0.9);
+  display: flex;
+}
+
+.emailhead {
+  color: black;
+  position: absolute;
+  font-weight: lighter;
+  font-size: 27px;
+  margin-left: 1555px;
+  margin-top: -150px;
+}
+
+.email a {
+  color: black;
+  text-align: center;
+  position: absolute;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-left: 1475px;
+  margin-top: -100px;
+  transition: ease-in-out 0.3s;
+}
+
+.email a:hover {
+  color: #104600;
+  transform: scale(0.9);
 }
